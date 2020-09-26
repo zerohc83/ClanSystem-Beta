@@ -94,7 +94,7 @@ class ClanCommands {
     
                     }
 					if(strtolower($args[0]) == "invite" or strtolower($args[0]) == "inv"){
-                        if ($this->plugin->isclanFull($this->plugin->getPlayerFaction($playerName))) {
+                        if ($this->plugin->isclanFull($this->plugin->getPlayerClan($playerName))) {
                             $sender->sendMessage($this->plugin->formatMessage("This clan is full, please kick players to make room"));
                             return true;
                         }
