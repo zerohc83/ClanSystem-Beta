@@ -1,0 +1,15 @@
+name: ClanSystem
+main: Wassi\Main
+version: beta v1
+api: 3.0.0
+author: zero
+extensions: [sqlite3]
+softdepend: ["EconomyAPI"]
+commands:
+ clan:
+ description: Clan commands.
+    permission: clan.command
+permissions:
+  clan.command:
+    default: true
+    description: "All clan commands"
